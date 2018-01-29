@@ -11,7 +11,7 @@ rm -f bin/muri
 echo Build Toolchain
 cc tools/embedimage.c -o bin/embedimage
 cc tools/extend.c -o bin/extend
-cc tools/unu.c -o bin/unu
+rustc unu.rs -o /bin/unu
 cc tools/muri.c -o bin/muri
 
 echo Updating Sources

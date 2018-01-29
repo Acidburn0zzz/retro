@@ -12,7 +12,7 @@ clean:
 toolchain:
 	$(CC) $(CFLAGS) tools/embedimage.c -o bin/embedimage
 	$(CC) $(CFLAGS) tools/extend.c -o bin/extend
-	$(CC) $(CFLAGS) tools/unu.c -o bin/unu
+	rustc tools/unu.rs -o bin/unu
 	$(CC) $(CFLAGS) tools/muri.c -o bin/muri
 
 update:
